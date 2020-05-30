@@ -16,7 +16,7 @@ driver = webdriver.Chrome('chromedriver.exe')
 driver.get(link)
 
 
-#cetak nama aplikasi
+#print title
 title = driver.find_element_by_xpath('/html/head/meta[9]').get_attribute('content')
 
 print(title)
